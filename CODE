@@ -1,0 +1,45 @@
+using System;
+namespace student
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Sem Score Result");
+            string name, roll;
+            Console.Write("Name        : ");
+            name = Console.ReadLine();
+            Console.Write("Roll        : ");
+            roll = Console.ReadLine();
+            Console.WriteLine("Name        : " + name);
+            Console.WriteLine();
+            Console.WriteLine("Roll        : " + roll);
+
+            int s1, s2, s3, s4, s5;
+            Console.Write("s1          : ");
+            s1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("s2          : "); 
+            s2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("s3          : ");
+            s3 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("s4          : ");
+            s4 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("s5          : ");
+            s5 = Convert.ToInt32(Console.ReadLine());
+   
+            Console.WriteLine("---------------------I-I Sem Marks--------------------------------");
+            Console.WriteLine("s1          : " + s1);
+            Console.WriteLine("s2          : " + s2);
+            Console.WriteLine("s3          : " + s3);
+            Console.WriteLine("s4          : " + s4);
+            Console.WriteLine("s5          : " + s5);
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine();
+            double total = s1 + s2 + s3 + s4 + s5;
+            Console.WriteLine(("Total       : " + total));
+            double percentage = (total / 500) * 100;
+            Console.WriteLine("Percentage %: " + percentage +"%");
+        }
+    }
+}
